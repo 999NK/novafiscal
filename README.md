@@ -87,6 +87,49 @@ Você → API / IA / WhatsApp → NovaFiscal → SEFAZ
 > 🧪 **Modo Teste:** emita notas completas sem certificado e sem valor fiscal — ideal para homologação e treinamento.
 
 
+<div>
+  <h2>🤖 Bot do Telegram — o que é</h2>
+
+  <p>
+    É um canal conversacional da NovaFiscal: permite que o usuário opere a plataforma inteira por mensagem no Telegram,
+    sem abrir o painel web. Recebe mensagens via webhook, normaliza, enfileira num worker BullMQ (não trava a API) e
+    responde de volta pelo Telegraf.
+  </p>
+
+  <h3>Pra que serve</h3>
+
+  <p>Dois públicos, dependendo se a conta está vinculada (<code>/vincular</code>):</p>
+
+  <h4>Comandos públicos — qualquer pessoa, sem login</h4>
+
+  <p>Consultas de dados abertos:</p>
+
+  <ul>
+    <li><code>/ncm</code> — descrição, unidade, IPI e imposto de importação de um código NCM</li>
+    <li><code>/cfop</code> — descrição, natureza e documentos aplicáveis de um CFOP</li>
+    <li><code>/cnpj</code> — dados da empresa na Receita Federal (BrasilAPI)</li>
+    <li><code>/cep</code>, <code>/banco</code>, <code>/ddd</code>, <code>/feriados</code>, <code>/municipio</code> — consultas utilitárias BrasilAPI</li>
+  </ul>
+
+  <h4>Comandos autenticados — tenant vinculado</h4>
+
+  <p>Operam os dados da empresa:</p>
+
+  <ul>
+    <li><code>/emitir</code>, <code>/nfce</code>, <code>/cte</code> — emissão conversacional com IA: assistente passo a passo (wizard) que pergunta os dados e emite a nota; o DANFE em PDF chega como anexo na própria conversa</li>
+    <li><code>/consultar</code> — status de uma nota por número ou chave de acesso</li>
+    <li><code>/danfe</code>, <code>/xml</code> — baixa o PDF/XML da nota como arquivo</li>
+    <li><code>/relatorio</code> — resumo fiscal do mês (total, autorizadas, rejeitadas, taxa de sucesso)</li>
+    <li><code>/dashboard</code> — notas de hoje e do mês</li>
+    <li><code>/sped</code> — gera o arquivo EFD ICMS/IPI ou Contribuições e envia o <code>.txt</code> pronto na conversa</li>
+    <li><code>/alertas</code> — certificado vencendo, notas pendentes/rejeitadas</li>
+    <li><code>/certificado</code> — status de validade do A1</li>
+    <li><code>/clientes</code>, <code>/cliente</code>, <code>/produtos</code>, <code>/produto</code>, <code>/regras</code> — consulta do catálogo (clientes, produtos, matriz tributária)</li>
+    <li><code>/cancelar</code>, <code>/corrigir</code> — orientam o cancelamento/CC-e (por segurança, a ação final é no painel web)</li>
+    <li><strong>Texto livre</strong> — qualquer mensagem sem comando vai pra IA fiscal, que responde como o chat da web</li>
+  </ul>
+</div>
+
 <div align="center">
   
   <h1>Imagens do sistema</h1>
