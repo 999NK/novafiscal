@@ -130,6 +130,8 @@ Você → API / IA / WhatsApp → NovaFiscal → SEFAZ
   </ul>
 </div>
 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/sdGvSfZ4/Captura-de-tela-2026-08-15-151708.png" alt="Captura de tela 2026 08 15 151708" border="0"></a>
+
 <div align="center">
   
   <h1>Imagens do sistema</h1>
