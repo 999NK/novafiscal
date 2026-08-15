@@ -88,7 +88,11 @@ Você → API / IA / WhatsApp → NovaFiscal → SEFAZ
 
 
 <div>
-  <h2>🤖 Bot do Telegram — o que é</h2>
+  <h2>🤖 Bot do Telegram</h2>
+
+  <div align="center">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/sdGvSfZ4/Captura-de-tela-2026-08-15-151708.png" alt="Captura de tela 2026 08 15 151708" border="0"></a>
+  </div>
 
   <p>
     É um canal conversacional da NovaFiscal: permite que o usuário opere a plataforma inteira por mensagem no Telegram,
@@ -130,7 +134,7 @@ Você → API / IA / WhatsApp → NovaFiscal → SEFAZ
   </ul>
 </div>
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/sdGvSfZ4/Captura-de-tela-2026-08-15-151708.png" alt="Captura de tela 2026 08 15 151708" border="0"></a>
+
 
 <div align="center">
   
